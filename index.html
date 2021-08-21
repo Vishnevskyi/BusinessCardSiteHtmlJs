@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&amp;subset=cyrillic,cyrillic-ext"
+    rel="stylesheet">
+    <title> Твой последний шанс всё изменить! </title>
+    <link rel="shortcut icon" href="./image/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <div>
+        <header>
+            <div class="title">
+                <a href="#">
+                    <img src="./image/main-logo.png" alt="Общее дело" />
+                </a>
+            </div>
+            <div class="main-text">
+                Уникальное новшество от программистов, благодаря которому обычные русские работяги получают
+                дополнительно от 60.000 рублей в месяц, уделяя всего 15 минут в день! Посмотрите видео, пройдите
+                бесплатную регистрацию и получите свою первую выплату уже завтра.
+            </div>
+            <div class="video-block">
+                <div class="volume" id="heart" onclick="document.querySelector('video').muted = false;">
+                    <i class="fas fa-5x fa-volume-up unmute-btn"></i>
+                    <p>Включить звук</p>
+                </div>
+                <video width="1260" height="710" oncontextmenu="return false;" controls autoplay muted type="video/mp4"
+                    src="./video/Vance Joy - Riptide -- Large Noises.mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </header>
+        <main class="second">
+            <div class="form-block">
+                <form action="registration.php" method="post">
+                    <input type="hidden" name="_ref" value="https://twowords.info/">
+                    <input type="hidden" name="_click" value="3accf002-4f74-4435-aa2d-d720ebac7789">
+                    <div class="inputs">
+                        <div class="inp-one">
+                            <i class="fas fa-user-circle onei"></i>
+                            <input type="text" name="username" placeholder="Ваше имя">
+                        </div>
+                        <div class="inp-two">
+                            <i class="fas fa-envelope twoi"></i>
+                            <input type="email" name="email" placeholder="Ваш актуальный e-mail" required>
+                        </div>
+                    </div>
+                    <div class="button">
+                        <div class="col-md-12">
+                            <button class="button_yes">
+                                Пройти БЕСПЛАТНУЮ регистрацию!
+                            </button>
+                        </div>
+                        <div class="col-xs-12 offer_row">
+                            <input type="checkbox" name="oferta" checked="">
+                            <span style="color: #fff;">Я согласен на обработку персональных данных и получение рекламных
+                                материалов, и я согласен
+                                с <a href="/policy.html" target="_blank">публичной офертой</a></span>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="image-block">
+                <div><img src="./image/main-footer-item-one.png" alt="one"></div>
+                <div><img src="./image/main-footer-item-two.png" alt="two"></div>
+                <div><img src="./image/main-footer-item-three.png" alt="three"></div>
+                <div><img src="./image/main-footer-item-four.png" alt="four"></div>
+                <div><img src="./image/main-footer-item-five.png" alt="five"></div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <ul class="menu_footer">
+                    <li>
+                        <a href="">Политика конфиденциальности</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            Пользовательское соглашение</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="copyright">
+                Copyright © 2021 – Общее дело
+            </div>
+        </footer>
+        <div class="main_stat">
+            <div class="main_stat_block_online">
+                <div class="num" id="num_online"></div>
+                <div class="text">
+                    <span>Смотрят</span>
+                    страницу
+                </div>
+            </div>
+            <div class="main_stat_block_last">
+                <div class="num" id="num_last"></div>
+                <div class="text">
+                    осталось
+                    <span>мест</span>
+                </div>
+            </div>
+        </div>
+        <div class="modal_wr" id="wr">
+            <div class="modal_body">
+                <div class="modal_container">
+                    <div class="modal_close">
+                        <a href="#" onclick="let wr = document.getElementsByClassName('modal_wr');
+                        for (let i = 0; i < wr.length; i++) {
+                            wr[i].style.visibility = 'hidden';
+                            wr[i].style.opacity = 0;
+                        }
+                        window.onscroll=function(){};
+                        " class="close"></a>
+                    </div>
+                    <div class="modal__title">
+                        Начните получать от 2500 у.е. в месяц!
+                        <br>
+                    </div>
+                    <div class="modal_cont">
+                        <div class="modal__form">
+                            <div class="modal__signature">
+
+                            </div>
+                            <div class="modal__form_title">
+                                Пройдите регистрацию и получите бесплатный доступ к программе!
+                            </div>
+                            <form action="registration.php" method="post">
+                                <input type="hidden" name="_ref" value="https://twowords.info/">
+                                <input type="hidden" name="_click" value="fe7f492c-2e79-4e10-82b3-6d2c23f09c8d">
+                                <div class="main__form_field modal__form_field">
+                                    <i class="fas fa-user-circle"></i>
+                                    <input type="text" placeholder="Ваше имя" id="name_modal" name="username">
+                                </div>
+                                <div class="main__form_field modal__form_field">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" placeholder="Ваш актуальный e-mail" id="email_modal"
+                                        name="email" required>
+                                </div>
+                                <div class="header__button">
+                                    <button>
+                                        Получить доступ
+                                    </button>
+                                    <div class="col-xs-12 offer_row" style="background-color: #fff;">
+                                        <input type="checkbox" name="oferta" checked="">
+                                        <span>Я согласен на обработку персональных данных и получение
+                                            рекламных материалов, и я согласен с <a href="/policy.html"
+                                                target="_blank">публичной офертой</a> </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    </form>
+                    <div class="modal__form_items flex">
+                        <img src="./image/main-footer-item-one.png" alt="one">
+                        <img src="./image/main-footer-item-two.png" alt="two">
+                        <img src="./image/main-footer-item-three.png" alt="there">
+                        <img src="./image/main-footer-item-four.png" alt="four">
+                        <img src="./image/main-footer-item-five.png" alt="five">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
